@@ -1,0 +1,209 @@
+/* Background */
+
+.resume-page {
+    min-height: 100vh;
+    background: linear-gradient(
+        135deg,
+        #0f172a,
+        #1e293b,
+        #334155
+    );
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    font-family: "Segoe UI", sans-serif;
+}
+
+/* Main Card */
+
+.resume-card {
+    width: 100%;
+    max-width: 1000px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(15px);
+    border-radius: 25px;
+    padding: 40px;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.4);
+    color: white;
+    animation: fadeIn 0.8s ease;
+}
+
+/* Header */
+
+.resume-header {
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+.resume-icon {
+    font-size: 70px;
+    margin-bottom: 15px;
+}
+
+.resume-header h1 {
+    font-size: 38px;
+    font-weight: 700;
+    margin-bottom: 12px;
+}
+
+.resume-header p {
+    font-size: 17px;
+    color: #cbd5e1;
+    line-height: 1.7;
+}
+
+/* Upload Area */
+
+.upload-section {
+    margin-top: 20px;
+    margin-bottom: 25px;
+}
+
+.resume-input {
+    width: 100%;
+    padding: 15px;
+    border: 2px dashed #60a5fa;
+    border-radius: 15px;
+    background: rgba(255,255,255,0.08);
+    color: white;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.resume-input:hover {
+    border-color: #38bdf8;
+    background: rgba(255,255,255,0.12);
+}
+
+/* Selected File */
+
+.file-preview {
+    margin-top: 15px;
+    padding: 12px;
+    border-radius: 12px;
+    background: rgba(255,255,255,0.08);
+    color: #93c5fd;
+    font-weight: 600;
+}
+
+/* Buttons */
+
+.upload-btn,
+.analyze-btn {
+    width: 100%;
+    border: none;
+    border-radius: 14px;
+    padding: 15px;
+    font-size: 17px;
+    font-weight: 600;
+    margin-top: 15px;
+    transition: 0.3s ease;
+}
+
+.upload-btn {
+    background: linear-gradient(
+        135deg,
+        #2563eb,
+        #3b82f6
+    );
+    color: white;
+}
+
+.upload-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 25px rgba(59,130,246,0.4);
+}
+
+.analyze-btn {
+    background: linear-gradient(
+        135deg,
+        #10b981,
+        #22c55e
+    );
+    color: white;
+}
+
+.analyze-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 25px rgba(34,197,94,0.4);
+}
+
+/* Analysis Section */
+
+.analysis-card {
+    margin-top: 35px;
+    background: rgba(255,255,255,0.08);
+    border-radius: 20px;
+    padding: 25px;
+}
+
+.analysis-card h2 {
+    margin-bottom: 20px;
+    color: #f8fafc;
+    font-size: 28px;
+}
+
+.analysis-content {
+    background: rgba(15,23,42,0.7);
+    border-radius: 15px;
+    padding: 20px;
+    max-height: 500px;
+    overflow-y: auto;
+}
+
+.analysis-content pre {
+    color: #e2e8f0;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    font-size: 15px;
+    line-height: 1.8;
+    margin: 0;
+}
+
+/* Scrollbar */
+
+.analysis-content::-webkit-scrollbar {
+    width: 8px;
+}
+
+.analysis-content::-webkit-scrollbar-thumb {
+    background: #60a5fa;
+    border-radius: 10px;
+}
+
+/* Animation */
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(25px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Mobile */
+
+@media (max-width: 768px) {
+
+    .resume-card {
+        padding: 25px;
+    }
+
+    .resume-header h1 {
+        font-size: 30px;
+    }
+
+    .resume-header p {
+        font-size: 15px;
+    }
+
+    .upload-btn,
+    .analyze-btn {
+        font-size: 15px;
+    }
+}

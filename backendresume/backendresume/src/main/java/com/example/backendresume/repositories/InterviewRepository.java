@@ -1,0 +1,17 @@
+
+package com.example.backendresume.repositories;
+
+import com.example.backendresume.entities.Interview;
+
+import org.springframework.data.jpa.repository.JpaRepository;
+
+import java.util.List;
+
+public interface InterviewRepository
+        extends JpaRepository<Interview, Long> {
+
+    List<Interview> findByUserEmail(
+            String userEmail
+    );
+}
+

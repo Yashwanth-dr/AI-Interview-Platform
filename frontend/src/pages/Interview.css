@@ -1,0 +1,379 @@
+/* =========================
+   INTERVIEW PAGE
+========================= */
+
+.interview-page {
+
+    min-height: 100vh;
+
+    background: linear-gradient(
+        135deg,
+        #0f172a,
+        #1e293b,
+        #334155
+    );
+
+    padding: 40px 20px;
+
+    display: flex;
+
+    justify-content: center;
+}
+
+/* =========================
+   CONTAINER
+========================= */
+
+.interview-container {
+
+    width: 100%;
+
+    max-width: 1100px;
+}
+
+/* =========================
+   HEADER
+========================= */
+
+.interview-header {
+
+    text-align: center;
+
+    margin-bottom: 40px;
+}
+
+.interview-header h1 {
+
+    font-size: 55px;
+
+    font-weight: 800;
+
+    margin-bottom: 10px;
+
+    background: linear-gradient(
+        90deg,
+        #38bdf8,
+        #818cf8
+    );
+
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.interview-header p {
+
+    color: #cbd5e1;
+
+    font-size: 18px;
+}
+
+/* =========================
+   GLASS CARDS
+========================= */
+
+.domain-card,
+.question-card,
+.feedback-card {
+
+    background: rgba(
+        255,
+        255,
+        255,
+        0.08
+    );
+
+    backdrop-filter: blur(15px);
+
+    border-radius: 25px;
+
+    padding: 30px;
+
+    margin-bottom: 25px;
+
+    border: 1px solid rgba(
+        255,
+        255,
+        255,
+        0.1
+    );
+
+    box-shadow:
+        0 15px 35px rgba(
+            0,
+            0,
+            0,
+            0.25
+        );
+
+    color: white;
+}
+
+/* =========================
+   DOMAIN SELECT
+========================= */
+
+.domain-card label {
+
+    display: block;
+
+    margin-bottom: 10px;
+
+    font-weight: 600;
+
+    color: white;
+}
+
+.domain-select {
+
+    width: 100%;
+
+    padding: 14px;
+
+    border: none;
+
+    border-radius: 12px;
+
+    margin-bottom: 20px;
+
+    font-size: 16px;
+}
+
+/* =========================
+   QUESTION CARD
+========================= */
+
+.question-number {
+
+    display: inline-block;
+
+    background: rgba(
+        56,
+        189,
+        248,
+        0.2
+    );
+
+    color: #38bdf8;
+
+    padding: 8px 16px;
+
+    border-radius: 20px;
+
+    font-weight: 700;
+
+    margin-bottom: 20px;
+}
+
+.question-card h3 {
+
+    line-height: 1.8;
+
+    margin-bottom: 20px;
+
+    color: white;
+}
+
+/* =========================
+   ANSWER BOX
+========================= */
+
+.answer-box {
+
+    width: 100%;
+
+    border: none;
+
+    border-radius: 15px;
+
+    padding: 20px;
+
+    font-size: 16px;
+
+    resize: vertical;
+
+    min-height: 180px;
+
+    margin-bottom: 20px;
+
+    outline: none;
+}
+
+.answer-box:focus {
+
+    box-shadow:
+        0 0 0 3px rgba(
+            59,
+            130,
+            246,
+            0.4
+        );
+}
+
+/* =========================
+   BUTTONS
+========================= */
+
+.generate-btn,
+.evaluate-btn,
+.next-btn {
+
+    border: none;
+
+    border-radius: 12px;
+
+    padding: 14px 24px;
+
+    font-size: 16px;
+
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+.generate-btn {
+
+    background: linear-gradient(
+        135deg,
+        #2563eb,
+        #3b82f6
+    );
+
+    color: white;
+}
+
+.evaluate-btn {
+
+    background: linear-gradient(
+        135deg,
+        #10b981,
+        #22c55e
+    );
+
+    color: white;
+}
+
+.next-btn {
+
+    background: linear-gradient(
+        135deg,
+        #f59e0b,
+        #f97316
+    );
+
+    color: white;
+
+    margin-top: 20px;
+}
+
+.generate-btn:hover,
+.evaluate-btn:hover,
+.next-btn:hover {
+
+    transform: translateY(-3px);
+
+    box-shadow:
+        0 10px 25px rgba(
+            0,
+            0,
+            0,
+            0.25
+        );
+}
+
+/* =========================
+   FEEDBACK SECTION
+========================= */
+
+.feedback-card h2 {
+
+    margin-bottom: 20px;
+
+    color: #38bdf8;
+}
+
+.feedback-card pre {
+
+    white-space: pre-wrap;
+
+    word-wrap: break-word;
+
+    line-height: 1.8;
+
+    color: #e2e8f0;
+
+    font-size: 15px;
+}
+
+/* =========================
+   COMPLETION CARD
+========================= */
+
+.completion-card {
+
+    margin-top: 25px;
+
+    background: linear-gradient(
+        135deg,
+        #16a34a,
+        #22c55e
+    );
+
+    padding: 18px;
+
+    border-radius: 15px;
+
+    text-align: center;
+
+    font-size: 18px;
+
+    font-weight: bold;
+
+    color: white;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 768px) {
+
+    .interview-header h1 {
+
+        font-size: 38px;
+    }
+
+    .interview-page {
+
+        padding: 20px;
+    }
+
+    .domain-card,
+    .question-card,
+    .feedback-card {
+
+        padding: 20px;
+    }
+}
+
+/* =========================
+   SCROLLBAR
+========================= */
+
+::-webkit-scrollbar {
+
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+
+    background: #1e293b;
+}
+
+::-webkit-scrollbar-thumb {
+
+    background: #38bdf8;
+
+    border-radius: 20px;
+}
